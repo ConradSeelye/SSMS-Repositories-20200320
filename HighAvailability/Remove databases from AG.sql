@@ -1,0 +1,24 @@
+USE [master]
+
+GO
+
+/****** Object:  AvailabilityDatabase [Shield_Database_Airplane]    Script Date: 11/22/2019 8:29:31 AM ******/
+ALTER AVAILABILITY GROUP [RDS-PQ-16T301P]
+REMOVE DATABASE [Shield_Database_Airplane];
+GO
+
+ALTER AVAILABILITY GROUP [RDS-PQ-16T301P]
+REMOVE DATABASE Shield_Database_Bit;
+GO
+
+ALTER AVAILABILITY GROUP [RDS-PQ-16T301P]
+REMOVE DATABASE Shield_Database_CheckInRecords;
+GO
+
+ALTER AVAILABILITY GROUP [RDS-PQ-16T301P]
+REMOVE DATABASE Shield_Database_Loto;
+GO
+
+ALTER AVAILABILITY GROUP [RDS-PQ-16T301P]
+REMOVE DATABASE Shield_Database_Users;
+GO

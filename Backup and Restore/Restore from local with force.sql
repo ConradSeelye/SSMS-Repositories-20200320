@@ -1,0 +1,17 @@
+
+USE [master]
+ALTER DATABASE <databasename> SET SINGLE_USER WITH ROLLBACK IMMEDIATE
+
+ALTER DATABASE <databasename> SET MULTI_USER
+
+
+
+--RESTORE DATABASE <databasename,,> 
+--FROM  DISK = N'S:\MSSQLSERVER\Restores\SmartFactory3D20181030002630.Bak' 
+--WITH  FILE = 1,  NOUNLOAD,  REPLACE,  STATS = 1
+
+
+
+GO
+
+
